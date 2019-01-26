@@ -1,0 +1,1484 @@
+
+/* Fonts ------------------------------------------------------------- */
+
+@font-face {
+font-family: 'jazz';
+src: url('../fonts/Pop&Jazz.ttf') format('truetype');
+  src: url('../fonts/POPJAZZ.eot');
+  src: url('../fonts/POPJAZZ.eot#iefix') format('embedded-opentype'),
+       url('../fonts/POPJAZZ.woff') format('woff'),
+       url('../fonts/Pop&Jazz.ttf') format('truetype'),
+       url('../fonts/POPJAZZ.svg#Name') format('svg');
+}
+
+
+
+
+
+
+
+
+/* Home Page ----------------------------------------------------------------------------------------- */
+
+
+/* Main Content------------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  color: #fff;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 2250px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/* Home Page ----------------------------------------------------------------------------------------- */
+
+/* Video ------------------------------------------------------------- */
+.video-container {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  z-index: -5;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+/* Landing Page ------------------------------------------------------------- */
+.landingPage-container {
+  position: relative;
+  min-width: 100%;
+  height: 100vh;
+}
+
+#landingPage-container1 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.black-bg {
+  position: absolute;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+.main-header-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 420px;
+  height: 360px;
+  max-width: 400px;
+  display: table;
+  }
+
+.spirit-header {
+  width: 100%;
+}
+
+.scroll-icon-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+}
+
+.scroll-icon {
+  position: relative;
+  height: 45px;
+  width: 27px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: solid 2px #fff;
+  border-radius: 20px;
+}
+
+.scroll-dot {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: move 2s infinite ease-in-out;
+}
+
+
+@keyframes move {
+
+    0% {
+  transform: translate(0, 10px);
+}
+
+/* Finish changes by here */
+40% {
+  transform: translate(0, -10px);
+  opacity: 1;
+}
+
+/* Between 20% and 100%, nothing changes */
+100% {
+  transform: translate(0, -10px);
+  opacity: 0;
+}
+}
+
+
+
+
+
+
+
+/* Nav Bar ------------------------------------------------------------- */
+nav {
+  max-width: 2250px;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 50;
+  padding: 6px 0 0 0;
+  width: 100%;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.9);
+  transition: all 200ms;
+}
+
+#navbar {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+#navbar-fixed {
+  position: fixed;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.navbar-default {
+    border-color: transparent;
+    border-radius: 0;
+    margin: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 11px 13px 15px 13px;
+    border-bottom: 3px solid rgba(77, 238, 232, 0.2);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    background-color: transparent;
+    border-bottom: 3px solid #4deeea;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: transparent;
+    border-bottom: 3px solid #4deeea;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    border-bottom: 3px solid #4deeea;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #fff;
+    border-bottom-color: #4deeea;
+}
+
+.dropdown-menu {
+    background-color: #000;
+    border: 0;
+    border-radius: 0 0 7px 7px;
+    box-shadow: none;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+.dropdown-menu>li>a {
+    background: #000;
+    padding: 15px 20px 17px 20px;
+    color: #fff;
+    border: 0;
+    font-size: 15px;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+#contact {
+  cursor: pointer;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus .caret {
+    border-top-color: #fff;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: #131313;
+}
+
+.navbar-toggle {
+  background-color: #fff;
+  margin-bottom: 8px;
+  margin-top: 3px;
+  outline: none;
+}
+
+.navbar-toggle:active .navbar {
+  background: rgba(0, 0, 0, 9);
+}
+
+.navbar .glyphicon {
+    font-size: 18px;
+    margin-top: -3px;
+}
+
+.home-btn {
+  opacity: 0.6;
+  transition: all 200ms;
+}
+
+.home-link:hover .home-btn {
+  opacity: 1;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.logo {
+  width: 200px;
+  padding: 6px 0 0 0;
+  color: #fff;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .boogie-container {
+  margin-top: 60px;
+}
+
+
+
+
+
+
+
+/* Boogie Introduction ------------------------------------------------------------- */
+
+.boogie-container {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0) 100%), url('../images/booige-wall.jpg') no-repeat;
+  background-size: cover;
+
+}
+
+.boogie-wrapper {
+  font-size: 1.8em;
+  width: 100%;
+  height: 100%;
+  padding: 0 100px;
+  display: table;
+}
+
+.introducing {
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+  width: 100%;
+  height: 100px;
+
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+/* Audio Player Section ------------------------------------------------------------- */
+
+
+.music-container {
+  position: relative;
+  width: 100%;
+}
+
+.coming-soon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: #FFF;
+}
+
+.soon-img {
+  color: #f000ff;
+  font-size: 2.5em;
+
+  position: absolute;
+  top: -200px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 370px;
+}
+
+.music-wrapper {
+  font-size: 1.8em;
+  font-weight: 200;
+  width: 100%;
+  max-height: 500px;
+  padding: 100px;
+}
+
+.waveform-container {
+  height: 200px;
+}
+
+#waveform {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#audio-btn {
+  background-color: none;
+  background: url('../images/icons/play-button.png') no-repeat;
+  background-size: contain;
+  height: 45px;
+  width: 35px;
+  margin-top: 20px;
+  outline: none;
+  padding: 0;
+  border: none;
+}
+
+#audio-btn:active {
+}
+
+.audio-head {
+  color: #f000ff;
+}
+
+.audio-txt {
+  font-size: 0.8em;
+  padding-top: 20px;
+  font-weight: 400;
+  color: #000;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+/* boogie central Gallery ------------------------------------------------------------- */
+
+.gallery-section-container {
+  min-height: 400px;
+  width: 100%;
+  background:  linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%), url('../images/drums.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: table;
+  border: solid 1px rgba(0, 0, 0, 0);
+  padding: 0 30px;
+}
+
+.gallery-section-txt {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 10px #000;
+  height: 100px;
+
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#check-out {
+  color: #4deeea;
+  text-shadow: 1px 1px 3px #000;
+}
+
+#check-out:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/* News & Upcoming events ------------------------------------------------------------- */
+
+.news-container {
+  width: 100%;
+  padding: 60px 10px 40px 10px;
+}
+
+.events {
+  height: 60px;
+}
+
+.facebook-widget {
+  margin: 0 auto;
+  height: 500px;
+  width: 100%;
+}
+
+/* End of Home Page ----------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* About -------------------------------------------------------------------------------------------------------- */
+
+.about-container {
+  height: auto;
+  width: 100%;
+  font-size: 1.3em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 7px #000;
+}
+
+.about-wrapper {
+  padding: 0 0 140px 0;
+  background-image: linear-gradient(to right, #1F2122, #0C0F11);
+  border-bottom: solid 1px #000;
+
+}
+
+.about-pic {
+  position: absolute;
+  top: 0;
+  min-height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  background: url('../images/bongos.jpeg') no-repeat;
+  background-size: cover;
+  background-position:50% 30%;
+}
+
+.about-container a:hover {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.bio-head {
+  width: 100%;
+  font-size: 1.6em;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 4px #000;
+  padding: 0px 0 20px 0;
+  padding-top: 500px;
+
+}
+
+.line {
+  height: 2px;
+  width: 25px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.bio-text {
+  width: 100%;
+  font-size: 0.8em;
+  font-weight: 200;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 4px #000;
+  padding: 60px 40px 0 40px;
+}
+
+.b {
+  font-weight: 500;
+}
+
+.yellow {
+  color: #4deeea;
+}
+
+.l {
+  font-size: 1.7em;
+}
+/* End of About Page -------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* Band & Gallery -------------------------------------------------------------------------------------------------------- */
+
+.page-container {
+  min-width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right, #0C0E0F, #232526);
+  color: #fff;
+}
+
+
+
+
+
+
+
+/* Band Page -------------------------------------------------------------------------------------------------------- */
+
+
+#band-container {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url('../images/drums.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+#band-container2 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url('../images/gallery/5.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+#band-container3 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url('../images/drums2.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+#band-head-container {
+  height: 150px;
+  width: 400px;
+  text-shadow: 1px 1px 13px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-icon-container2 {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+}
+
+.scroll-icon2 {
+  position: relative;
+  height: 25px;
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: solid 2px #fff;
+  border-radius: 20px;
+}
+
+.scroll-dot2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: swipe 2s infinite ease-in-out;
+}
+
+@keyframes swipe {
+
+0% {
+  transform: translate(10px, 0);
+}
+
+/* Finish changes by here */
+40% {
+  transform: translate(-10px, 0);
+  opacity: 1;
+}
+
+/* Between 20% and 100%, nothing changes */
+100% {
+  transform: translate(-10px, 0);
+  opacity: 0;
+}
+}
+
+/*---Slider------------------*/
+.slider-bg { /* to prevent container from collapsing */
+  border: solid 1px #000;
+  position: relative;
+}
+
+#slider-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  margin: 60px auto;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.js .slider-single > div:nth-child(1n+2) { display: none }
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+
+
+.slider-nav h3::before {
+	content: "";
+	display: block;
+	padding-top: 75%;
+  min-height: 200px;
+}
+
+.slider-nav h3 span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.slider-nav .slick-slide {
+  cursor: pointer;
+}
+
+.slick-slide.is-active h3 {
+	color: #c00;
+	background-color: #000
+}
+
+.slide-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: none;
+  opacity: 0.4;
+  transition: all 200ms ease;
+}
+
+.slide-arrow:hover {
+  opacity: 1;
+}
+
+.prev-arrow {
+  left: -30px;
+  background: url("../images/icons/play-button.png");
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
+.next-arrow {
+  right: -30px;
+  background: url("../images/icons/play-button.png");
+  background-size: contain;
+}
+
+button:focus {outline:0;}
+
+
+/*---Arrows------------------*/
+.slide-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: none;
+  opacity: 0.4;
+  transition: all 200ms ease;
+}
+
+.slide-arrow:hover {
+  opacity: 1;
+}
+
+.prev-arrow {
+  left: -30px;
+  background: url("../images/icons/play-button.png");
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
+.next-arrow {
+  right: -30px;
+  background: url("../images/icons/play-button.png");
+  background-size: contain;
+}
+
+button:focus {outline:0;}
+
+
+/*---Content------------------*/
+.info-wrapper {
+  max-height: 400px;
+  height: auto;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.info-name {
+  font-family: 'jazz', 'Montserrat', 'Open Sans', sans-serif;
+  line-height: 46px;
+  padding-bottom: 20px;
+  color: #4deeea;
+}
+
+.info-pic {
+  float: left;
+  width: 31%;
+  align-items: center;
+  min-width: 390px;
+  max-width: 500px;
+}
+
+.info-text {
+  height: auto;
+  width: 100%;
+  padding: 40px 70px;
+}
+
+.info-job {
+  font-weight: none;
+  color: #f000ff;
+}
+
+.inside-scroll {
+  height: 380px;
+  overflow-y: scroll;
+  padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+  box-sizing: content-box; /* So the width will be 100% + 17px */
+}
+
+h4 {
+  margin: 20px 0 30px 0;
+
+}
+
+.s {
+  font-size: 0.9em;
+}
+
+.member1 h3 {
+  background: url("../images/band/IwanFunkT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member2 h3 {
+  background: url("../images/band/ChrisSuitT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member3 h3 {
+  background: url("../images/band/MR-EFunkT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member4 h3 {
+  background: url("../images/band/ben.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member5 h3 {
+  background: url("../images/band/WayneSuitT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member6 h3 {
+  background: url("../images/band/MR-EFunkT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member7 h3 {
+  background: url("../images/band/MR-EFunkT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member8 h3 {
+  background: url("../images/band/EggySuitT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member9 h3 {
+  background: url("../images/band/EliSuitT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member10 h3 {
+  background: url("../images/band/JezSuitT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member11 h3 {
+  background: url("../images/band/LeeSuit.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member12 h3 {
+  background: url("../images/band/DaiCSuitT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member13 h3 {
+  background: url("../images/band/DaiISuitT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member14 h3 {
+  background: url("../images/band/AlexSuitT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member15 h3 {
+  background: url("../images/band/CraigSuitT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member16 h3 {
+  background: url("..//images/band/DozSuitT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member17 h3 {
+  background: url("../images/band/dorian-richard-holmesT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member18 h3 {
+  background: url("../images/band/courtenay-probertT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.member19 h3 {
+  background: url("../images/band/nick-geakeT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* End of Band Page ----------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* Gallery -------------------------------------------------------------------------------------------------------- */
+
+#galleryPage-container {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%), url('../images/drums.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.gallery-container {
+  padding: 30px 0;
+}
+
+.small-images {
+  max-height: 250px;
+  max-width: 350px;
+}
+
+/* End of Gallery ----------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* Footer ------------------------------------------------------------- */
+
+footer {
+  position: relative;
+  font-size: 1.1em;
+  font-weight: 400;
+  padding: 30px;
+  background-image: linear-gradient(to right, #1F2122, #232526);
+  width: 100%;
+}
+
+#footer-about {
+background-image: linear-gradient(120deg, #1F2122, #0C0F11);
+}
+
+.footer-name {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.description {
+  font-size: 1.2em;
+  color: #f000ff;
+  font-weight: 300;
+  text-align: right;
+  margin: 16px 0 26px 0;
+  padding: 4px 55px 4px 0;
+  border-right: solid 1px #f000ff;
+}
+
+#no-padding {
+  padding: 0;
+}
+
+.social-media {
+  float: left;
+  margin: 16px 0 30px 30px;
+  display: inline-block;
+}
+
+.social-icon {
+  position: relative;
+  display: inline;
+  margin: 0 15px 0 15px;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  border: solid 2px #FFF;
+  border-radius: 50%;
+}
+
+#social-media-nav {
+  width: 237px;
+  padding: 0;
+  margin: 9px 0 0 10px;
+}
+
+#social-media-icon-nav {
+margin: 0px 12px 0 12px;
+height: 26px;
+width: 26px;
+}
+
+.facebook {
+  background: url("../images/icons/facebook.png") no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+  transition: all 200ms;
+}
+
+.twitter {
+  background: url("../images/icons/twitter.png") no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+  transition: all 200ms;
+}
+
+.youtube {
+  background: url("../images/icons/youtube.png") no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+  transition: all 200ms;
+}
+
+.soundcloud {
+  background: url("../images/icons/soundcloud.png") no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+  transition: all 200ms;
+}
+
+.facebook:hover {
+  background: url("../images/icons/facebook-pink.png") no-repeat;
+  background-size: cover;
+}
+
+.twitter:hover {
+  background: url("../images/icons/twitter-pink.png") no-repeat;
+  background-size: cover;
+  transition: all 200ms;
+}
+
+.youtube:hover {
+  background: url("../images/icons/youtube-pink.png") no-repeat;
+  background-size: cover;
+  transition: all 200ms;
+}
+
+.soundcloud:hover {
+  background: url("../images/icons/soundcloud-pink.png") no-repeat;
+  background-size: cover;
+  transition: all 200ms;
+}
+
+.facebook:hover,
+.twitter:hover,
+.youtube:hover,
+.soundcloud:hover {
+  opacity: 1;
+  border: solid 2px #82008B;
+  cursor: pointer;
+}
+
+.footer-text {
+  display: block;
+  line-height: 50px;
+  margin: 0 auto;
+  color: #FFF;
+}
+
+.footer-text:hover {
+  color: #f000ff;
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 0.9em;
+  font-weight: 200;
+  margin: 50px 0 0 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* End of Footer ------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* Modal ------------------------------------------------------------- */
+
+.modal-window {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  color: #000;
+}
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  height: 510px;
+  background-color: #fff;
+}
+
+#name,
+#email,
+#comments {
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: solid 1px #000;
+  border-radius: 4px;
+  outline: none;
+}
+
+fieldset label {
+  margin-top: 30px;
+}
+
+#verification-ques {
+  margin-top: 0px;
+}
+
+#send-button {
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #000;
+}
+
+#send-button:hover {
+  color: #4deeea;
+  border-color:	#4deeea;
+  cursor: pointer;
+}
+
+#message-box {
+  min-height: 100px;
+}
+
+.modal-contact {
+  font-size: 2.8em;
+  line-height: 40px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  font-size: 2.3em;
+  transform: rotate(45deg);
+
+}
+
+
+
+
+
+
+
+/* Media Queries ------------------------------------------------------------- */
+
+@media (max-width: 1200px) {
+
+  #social-media-nav {
+    display: none;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+      padding: 10px 10px 19px 10px;
+  }
+}
+
+
+@media (max-width: 991px) {
+
+  #events {
+    margin-top: 40px;
+  }
+}
+
+
+@media (max-width: 932px) {
+
+.info-text {
+  padding: 40px 30px;
+  }
+}
+
+
+@media (max-width: 819px) {
+
+  .info-pic {
+    float: none;
+    margin: 0 auto;
+    margin-top: 0;
+    min-width: 10px;
+    width: 70%;
+  }
+
+  .info-wrapper {
+    max-height: 680px;
+    min-height: 10px;
+    overflow-y: scroll;
+  }
+
+  .info-text {
+    padding: 10px 30px;
+  }
+
+  .inside-scroll {
+    overflow-y: none;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .logo {
+    padding-left: 15px;
+  }
+
+  .description {
+    text-align: center;
+    margin: 16px 0 26px 0;
+    padding: 4px 0 4px 0;
+    border-right: none;
+  }
+
+  .social-media {
+    float: none;
+    margin: 16px 0 30px 0;
+  }
+
+  .slider-bg {
+    padding-top: 30px;
+  }
+
+  .slide-arrow {
+    opacity: 0;
+  }
+
+  .scroll-icon-container2 {
+    display: block;
+  }
+
+}
+
+
+@media (max-width: 620px) {
+
+  body {
+  font-size: 11px;
+  }
+
+  .scroll-icon-container {
+    bottom: 75px;
+  }
+
+  .boogie-wrapper {
+    padding: 0 30px;
+  }
+
+  .boogie1-wrapper {
+    padding: 60px 10px 0px 10px;
+  }
+
+  .music-wrapper {
+    padding: 30px 30px;
+  }
+
+  .bio-text {
+    padding: 30px 20px 0 0;
+  }
+
+  .b {
+    font-weight: 500;
+  }
+
+  .jazz {
+    font-family: 'jazz';
+  }
+
+  .sm {
+    font-size: 1.5em;
+  }
+
+  .main-header-container {
+    max-width: 350px;
+    }
+
+  .info-pic {
+    width: 80%;
+  }
+
+  .info-name {
+    font-size: 2em;
+    line-height: 35px;
+    padding-bottom: 0px;
+  }
+
+  .info-text {
+    padding: 0px 20px 10 20px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+
+  .inside-scroll {
+    overflow-y: scroll;
+  }
+
+  .info-wrapper {
+    overflow: none;
+  }
+
+  .fb-page {
+    width: 300px;
+  }
+}
+
+
+
+
+
+
+
+/* FadeIn Animation ----------------------------------------------------------------------------------------- */
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@media (prefers-reduced-motion) {
+  .animated {
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
