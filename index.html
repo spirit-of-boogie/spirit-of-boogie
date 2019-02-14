@@ -227,34 +227,28 @@
   <div class="modal-window">
       <div class="modal-content">
         <div class="close" id="close">+</div>
-        <h2 class="modal-contact">Contact us</h2>
         <div class="contact-form">
-          <form method="post" action="contact.php" name="contactform" id="contactform">
+          <div id="wufoo-z3xsy050jep03p">
+          Fill out my <a href="https://smevan.wufoo.com/forms/z3xsy050jep03p">online form</a>.
+          </div>
+          <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">The easy to use <a href="http://www.wufoo.com/form-builder/">Wufoo form builder</a> helps you make forms easy, fast, and fun.</div>
+          <script type="text/javascript">var z3xsy050jep03p;(function(d, t) {
+          var s = d.createElement(t), options = {
+          'userName':'smevan',
+          'formHash':'z3xsy050jep03p',
+          'autoResize':true,
+          'height':'577',
+          'async':true,
+          'host':'wufoo.com',
+          'header':'show',
+          'ssl':true};
+          s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js';
+          s.onload = s.onreadystatechange = function() {
+          var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+          try { z3xsy050jep03p = new WufooForm();z3xsy050jep03p.initialize(options);z3xsy050jep03p.display(); } catch (e) {}};
+          var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+          })(document, 'script');</script>
 
-                      <fieldset>
-
-                      <label for="name"><span class="required">*</span> Your Name</label>
-                      <input name="name" type="text" id="name" size="30" value="" />
-
-                      <label for="email"><span class="required">*</span> Email</label>
-                      <input name="email" type="text" id="email" size="30" value="" />
-
-                      <label for="comments"><span class="required">*</span> Your message</label>
-                      <textarea name="comments" cols="40" rows="3" id="comments"></textarea>
-
-                      <br>
-                      <br>
-
-                      <p><span class="required">*</span> Are you human?</p>
-
-                      <label id="verification-ques" for="verify">   3 + 1 =</label>
-                      <input name="verify" type="text" id="verify" size="4" value="" style="width: 30px;" /><br /><br />
-
-                      <input type="submit" class="submit" id="submit" value="Submit" />
-
-                      </fieldset>
-
-                      </form>
         </div>
       </div>
   </div>
